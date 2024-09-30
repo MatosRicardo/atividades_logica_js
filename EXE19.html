@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 19</title>
+  </head>
+  <body>
+    <h1>
+      Elaborar um programa que efetue a apresentação do valor da conversão em
+      real (R$) de um valor lido em dólar (US$). O programa deverá solicitar o
+      valor da cotação do dólar e também a quantidade de dólares disponíveis com
+      o usuário.
+    </h1>
+    <script>
+      let cotacao = Number(prompt("Informe a cotaçao atua do dólar: "));
+      let saldo = Number(prompt("Informe o seu saldo em dólar: "));
+
+      if (cotacao == null && saldo == null) {
+        document.write(
+          "Por favor informe a cotação e o seu saldo corretamento!"
+        );
+      } else {
+        let valorReais = saldo * cotacao;
+        document.write(
+          `O seu saldo de $${saldo} dólares com a cotação atual de R$${cotacao} convertido são R$${valorReais} reais.`
+        );
+      }
+    </script>
+  </body>
+</html>

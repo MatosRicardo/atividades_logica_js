@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 1</title>
+  </head>
+  <body>
+    <h1>
+      Criar um programa em Java, que informe a quantidade total de calorias de
+      uma refeição a partir do usuário que deverá informar o prato, a sobremesa
+      e a bebida (veja a tabela a seguir).
+    </h1>
+
+    <script>
+      let prato = prompt(
+        "Digite um número em referência ao prato: 1-Vegetariano; 2-Peixe; 3-Frango e 4-Carne "
+      );
+      let sobremesa = prompt(
+        "Digite um número em referência a sobremesa: 1-Abacaxi; 2-Sorvete Diet; 3-Mouse Diete e 4-Mouse de chocolate "
+      );
+      let bebida = prompt(
+        "Digite um número em referência a bebida: 1-Chá; 2-Suco de Laranja; 3-Suco de Limão e 4-Refrigerante Diet "
+      );
+
+      switch (prato) {
+        case "1":
+          document.write("<br>- Seu prato é o vegetariano, com 180 Cal");
+          break;
+        case "2":
+          document.write("<br>- Seu prato é o Peixe, com 230 Cal");
+          break;
+        case "3":
+          document.write("<br>- Seu prato é o Frango, com 250 Cal");
+          break;
+        case "4":
+          document.write("<br>- Seu prato é o Carne, com 350 Cal");
+          break;
+        default:
+          alert("Não existe esse prato!!");
+          break;
+      }
+      switch (sobremesa) {
+        case "1":
+          document.write("<br>- Sua sobremessa é o abacaxi, com 75 Cal");
+          break;
+        case "2":
+          document.write("<br>- Sua sobremessa é o Sorvete diet, com 110 Cal");
+          break;
+        case "3":
+          document.write("<br>- Sua sobremessa é o Mouse diet, com 170 Cal");
+          break;
+        case "4":
+          document.write(
+            "<br>- Sua sobremessa é o Mouse chocolate, com 200 Cal"
+          );
+          break;
+
+        default:
+          alert("Não existe esse prato!!");
+          break;
+      }
+      switch (bebida) {
+        case "1":
+          document.write("<br>- Sua bebida é chá, com 20 Cal");
+          break;
+        case "2":
+          document.write("<br>- Sua bebida é Suco de Laranja, com 20 Cal");
+          break;
+        case "3":
+          document.write("<br>- Sua bebida é Seuco de Melão, com 20 Cal");
+          break;
+        case "4":
+          document.write("<br>- Sua bebida é Refrigerante Diet, com 20 Cal");
+          break;
+        default:
+          alert("Não existe esse prato!!");
+          break;
+      }
+    </script>
+  </body>
+</html>
